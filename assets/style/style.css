@@ -137,8 +137,8 @@ section {
 }
 
 .section4 .card img {
-    max-width: 190px;
-    max-height: 190px;
+    max-width: 10rem;
+    max-height: 10rem;
 }
 
 .fs-12px {
