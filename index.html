@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body class="position-relative">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container">
+      <a title="logo" class="navbar-brand" href="#">
+        <img id="logo" src="./assets/svg/logo.svg" alt="">
+        <img src="./assets/svg/Title.svg" alt="">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./assets/svg/nav-button.svg" alt="">
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarColor01">
+        <ul class="navbar-nav justify-content-center mx-auto">
+          <li class="nav-item">
+            <a class="nav-link link-light text-decoration-none" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light text-decoration-none" href="#">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light text-decoration-none" href="#">TECHNOLOGIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light text-decoration-none" href="#">HOW TO</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-4">
+          <button class="btn btn-outline-light rounded-pill">CONTACT US</button>
+          <button class="btn btn-styled rounded-pill">JOIN HYDRA</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="section1 container">
+    <div class="row flex-row-reverse justify-content-between gy-5">
+      <div class="col-12 col-md-5 d-flex justify-content-end">
+        <!-- Shapes are not responsive -->
+        <!-- <div class="shapes">
+          <img class="shape1" src="./assets/svg/Vector 1.svg" alt="">
+          <img class="shape2" src="./assets/svg/Vector 2.svg" alt="">
+          <img class="shape3" src="./assets/svg/Vector 3.svg" alt="">
+        </div> -->
+        <img class="main-cover position-relative z-1 thick-shadow"
+          src="./assets/img/pexels-michelangelo-buonarroti-8728382 1.png" alt="">
+      </div>
+      <div class="col-12 col-md-5 d-flex flex-column align-items-center align-items-md-start justify-content-around">
+        <div>
+          <p class="display-6 text-center text-md-start"><span class="gradient-text">Dive</span> Into The
+            Depths</p>
+          <p class="display-6 text-center text-md-start">Of <span class="gradient-text">Virtual
+              Reality</span></p>
+        </div>
+        <p class="fw-normal fs-5 d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit,
+          sed do eiusmod tempor incididunt ut labore et dolore
+          nisl tincidunt eget. Lectus mauris eros in vitae .</p>
+        <div class="d-flex gap-4">
+          <button class="btn btn-styled rounded-pill">BUILD YOUR WORLD</button>
+          <img class=" d-none d-md-block" src="./assets/svg/Arrow-Right.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="section2 container rounded-pill d-flex d-md-block align-items-center justify-content-between">
+    <div onclick="switchLeft()">
+      <img class="switch-left d-block d-md-none" src="./assets/svg/Arrow-Right-Small.svg" alt="">
+    </div>
+    <div class="
+        rounded-pill row row-cols-1
+        row-cols-md-3
+        p-4
+        justify-content-center
+        switches-container">
+      <div class="d-flex gap-3 flex-wrap flex-md-nowrap align-items-center justify-content-center">
+        <div class="d-flex justify-content-center p-3">
+          <img src="./assets/svg/Location.svg" alt="">
+        </div>
+        <div class="d-flex flex-column gap-1 justify-content-center align-items-center">
+          <span class="d-none d-md-block fs-5">Pay Us a Visit</span>
+          <span class="small fw-normal">Union St, Seattle, WA 98101, United States</span>
+        </div>
+      </div>
+      <div
+        class="d-none d-md-flex border-start border-end border-secondary gap-3 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center p-3">
+          <img src="./assets/svg/Phone.svg" alt="">
+        </div>
+        <div class="d-flex flex-column gap-1 justify-content-center align-items-center">
+          <span class=" d-none d-md-block fs-5">Give Us a Call</span>
+          <span class="small fw-normal">(110) 1111-1010</span>
+        </div>
+      </div>
+      <div class="d-none d-md-flex  gap-3 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center p-3">
+          <img src="./assets/svg/Email.svg" alt="">
+        </div>
+        <div class="d-flex flex-column gap-1 justify-content-center align-items-center">
+          <span class=" d-none d-md-block fs-5">Send Us a Message</span>
+          <span class="small fw-normal">Contact@HydraVTech.com</span>
+        </div>
+      </div>
+    </div>
+    <div onclick="switchRight()">
+      <img class="switch-right d-block d-md-none" src="./assets/svg/Arrow-Left-Small.svg" alt="">
+    </div>
+  </section>
+
+  <section class="section3">
+
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-md-2 align-items-center justify-content-center my-5">
+        <div>
+          <p class="display-6 text-center text-md-start">INTRODUCTION</p>
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-5">
+            <p class="fw-light display-6 text-center text-md-start">TO HYDRA VR</p>
+            <img class="d-none d-md-block w-25" src="./assets/svg/Arrow-Right-Big.svg" alt="">
+          </div>
+        </div>
+        <div>
+          <p class="fw-normal d-none d-md-block">
+            Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-between gy-4">
+
+
+        <div class="col-12 col-md-5">
+          <img class="main-cover shadow" src="./assets/img/pexels-shvets-production-7562014 1.png" alt="">
+        </div>
+
+
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <div class="d-none d-md-block mb-3">
+            <p class="display-6 text-center text-md-start">ABOUT</p>
+            <p class="fw-light display-6 text-center text-md-start">HYDRA VR</p>
+          </div>
+          <div>
+            <p class="fw-normal">
+              Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus
+              urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida
+              dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in.
+              Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet
+              sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
+              etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet
+              cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+              retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+              n tempor.
+            </p>
+            <div class="d-flex justify-content-center justify-content-md-start mt-4">
+              <button class="btn btn-styled rounded-pill">LET’S GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+
+  </section>
+
+
+  <section class="section4">
+    <div class="container">
+
+
+
+      <div class="row row-cols-1 row-cols-md-2 align-items-center justify-content-center my-5">
+        <div>
+          <p class="display-6 text-center text-md-start">WHY BUILD</p>
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-5">
+            <p class="fw-light display-6 text-center text-md-start">WITH HYDRA?</p>
+            <img class="d-none d-md-block w-25" src="./assets/svg/Arrow-Right-Big.svg" alt="">
+          </div>
+        </div>
+        <div>
+          <p class="fw-normal d-none d-md-block">
+            Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row row-cols-1 row-cols-md-4 g-2">
+
+        <div>
+          <div class="d-flex flex-column align-items-center gap-2 rounded-4 card px-3 py-5">
+            <div class="mb-4">
+              <img class="rounded-circle thick-shadow" src="./assets/img/pexels-mikhail-nilov-7887140 1.png" alt="">
+            </div>
+            <span class="fs-4">EDUCATION</span>
+            <hr class="w-50 border border-white">
+            <p class="fw-light fs-12px">
+              Vitae sapien pellentesque habitant morbi
+              nunc. Viverra aliquet porttitor rhoncus
+              libero justo laoreet sit amet vitae.
+            </p>
+            <button class="btn btn-styled rounded-pill">TRY IT NOW</button>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="d-flex flex-column align-items-center gap-2 rounded-4 card px-3 py-5">
+            <div class="mb-4">
+              <img class="rounded-circle thick-shadow" src="./assets/img/pexels-mali-maeder-756439 1.png" alt="">
+            </div>
+            <span class="fs-4">EDUCATION</span>
+            <hr class="w-50 border border-white">
+            <p class="fw-light fs-12px">
+              Vitae sapien pellentesque habitant morbi
+              nunc. Viverra aliquet porttitor rhoncus
+              libero justo laoreet sit amet vitae.
+            </p>
+            <button class="btn btn-styled rounded-pill">TRY IT NOW</button>
+
+          </div>
+        </div>
+
+
+        <div>
+          <div class="d-flex flex-column align-items-center gap-2 rounded-4 card px-3 py-5">
+            <div class="mb-4">
+              <img class="rounded-circle thick-shadow" src="./assets/img/pexels-mikhail-nilov-7887140 1.png" alt="">
+            </div>
+            <span class="fs-4">EDUCATION</span>
+            <hr class="w-50 border border-white">
+            <p class="fw-light fs-12px">
+              Vitae sapien pellentesque habitant morbi
+              nunc. Viverra aliquet porttitor rhoncus
+              libero justo laoreet sit amet vitae.
+            </p>
+            <button class="btn btn-styled rounded-pill">TRY IT NOW</button>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="d-flex flex-column align-items-center gap-2 rounded-4 card px-3 py-5">
+            <div class="mb-4">
+              <img class="rounded-circle thick-shadow" src="./assets/img/pexels-mali-maeder-756439 1.png" alt="">
+            </div>
+            <span class="fs-4">EDUCATION</span>
+            <hr class="w-50 border border-white">
+            <p class="fw-light fs-12px">
+              Vitae sapien pellentesque habitant morbi
+              nunc. Viverra aliquet porttitor rhoncus
+              libero justo laoreet sit amet vitae.
+            </p>
+            <button class="btn btn-styled rounded-pill">TRY IT NOW</button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section5">
+    <div class="container">
+      <div class="main-cover d-flex flex-column justify-content-center">
+        <p class="fs-1 text-center">TECHNOLOGIES & HARDWARE</p>
+        <p class="fs-1 fw-light text-center">USED BY HYDRA VR.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-4 align-items-center justify-content-start gx-4 py-5">
+        <img src="./assets/svg/Unreal.svg" alt="">
+        <img src="./assets/svg/Unity.svg" alt="">
+        <img src="./assets/svg/Oculus.svg" alt="">
+        <img src="./assets/svg/Vive.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="section6">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 align-items-center justify-content-center my-5">
+        <div>
+          <p class="display-6 text-center text-md-start">HOW WE BUILD</p>
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-5">
+            <p class="fw-light display-6 text-center text-md-start">WITH HYDRA VR?</p>
+            <img class="d-none d-md-block w-25" src="./assets/svg/Arrow-Right-Big.svg" alt="">
+          </div>
+        </div>
+        <div>
+          <p class="fw-normal d-none d-md-block">
+            Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-4 justify-content-center align-items-center g-4">
+
+        <div class="d-flex flex-column align-items-center">
+          <div class="card rounded-circle thick-shadow ms-4">
+            <span class="display-2 text-transperent">01</span>
+          </div>
+          <div class="d-flex gap-3 justify-content-center mt-4">
+            <img src="./assets/svg/Arrow-Right-Smaller.svg" alt="">
+            <span class="w-50 text-center text-md-start">3D Conception & Design</span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+          <div class="card rounded-circle thick-shadow ms-4">
+            <span class="display-2 text-transperent">02</span>
+          </div>
+          <div class="d-flex gap-3 justify-content-center mt-4">
+            <img src="./assets/svg/Arrow-Right-Smaller.svg" alt="">
+            <span class="w-50 text-center text-md-start">Interaction Design</span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+          <div class="card rounded-circle thick-shadow ms-4">
+            <span class="display-2 text-transperent">03</span>
+          </div>
+          <div class="d-flex gap-3 justify-content-center mt-4">
+            <img src="./assets/svg/Arrow-Right-Smaller.svg" alt="">
+            <span class="w-50 text-center text-md-start">VR World User Testing</span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+          <div class="card rounded-circle thick-shadow ms-4">
+            <span class="display-2 text-transperent">04</span>
+          </div>
+          <div class="d-flex gap-3 justify-content-center mt-4">
+            <img src="./assets/svg/Arrow-Right-Smaller.svg" alt="">
+            <span class="w-50 text-center text-md-start">Hydra VR Deploy</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section7">
+    <div class="container">
+      <form>
+        <div class="d-flex flex-column">
+          <div class="mb-3">
+            <p class="display-6 text-center">JOIN HYDRA</p>
+          </div>
+          <hr class="border mb-3">
+
+          <div class="mb-3">
+            <p class="display-6 fw-light text-center">Let’s Build Your VR Experience</p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+            <div>
+              <input type="text" class="form-control bg-transparent rounded-5" placeholder="First Name">
+            </div>
+            <div>
+              <input type="text" class="form-control bg-transparent rounded-5" placeholder="Last Name">
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+            <div>
+              <input type="email" class="form-control bg-transparent rounded-5" placeholder="Email">
+            </div>
+            <div>
+              <input type="tel" class="form-control bg-transparent rounded-5" placeholder="Phone Number">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <input type="text" class="form-control bg-transparent rounded-5" placeholder="Subject">
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control bg-transparent rounded-5" rows="6" placeholder="Tell Us Something..."></textarea>
+          </div>
+          <div class="mt-4 d-flex justify-content-center">
+            <button type="button" class="btn btn-styled rounded-pill flex-grow-1 flex-md-grow-0">SEND TO HYDRA</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
