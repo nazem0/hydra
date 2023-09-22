@@ -125,6 +125,8 @@ section {
 
 .section2 img {
     min-width: 50px;
+    max-width: 3rem !important;
+
 }
 
 .section3 .main-cover {
