@@ -6,13 +6,15 @@
 }
 
 
+.form-control {
+    color: white !important;
+}
 
 * {
+    color: white;
     padding: 0;
     margin: 0;
-    font-weight: 500 !important;
     font-family:Montserrat,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold !important;
 }
 
 p,
@@ -157,30 +159,27 @@ section {
     border-radius: 18rem;
 }
 
-.section6 .card
-{
+.section6 .card {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10rem;
     width: 10rem;
-    background: linear-gradient(220deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 65%);
+    background: linear-gradient(220deg, rgba(192, 183, 232, 1) 0%, rgba(129, 118, 175, 1) 65%);
 }
 
-.text-transperent
-{
+.text-transperent {
     color: unset;
 }
 
-.section7 form
-{
+.section7 form {
     padding: 3rem;
     border-radius: 5rem;
-    background: radial-gradient(circle, rgba(64,58,95,1) 0%, rgba(33,30,46,1) 65%);
+    background: radial-gradient(circle, rgba(64, 58, 95, 1) 0%, rgba(33, 30, 46, 1) 65%);
 
 }
 
-.section7 form hr{
+.section7 form hr {
     border: 0.5px solid !important;
     border-image-slice: 1 !important;
     border-image-source: linear-gradient(220deg, #343045 0%, #c0b7e8 33%, #8176af 66%, #343045 100%) !important;
@@ -189,14 +188,13 @@ section {
 }
 
 
-.section7 form input,.section7 form textarea
-{
+.section7 form input,
+.section7 form textarea {
     padding: 1.2rem 3rem;
 }
 
-.section7 form input::placeholder, .section7 form textarea::placeholder
-{
+.section7 form input::placeholder,
+.section7 form textarea::placeholder {
     color: white;
     font-weight: lighter;
 }
-
